@@ -1,0 +1,33 @@
+#--------------- Spring Properties - Start ---------------#
+spring:
+  #Control exception strack trace to show up in logs
+  exceptions:
+    include-stack-trace-in-log: false
+
+
+  #DB Configuration
+  jpa:
+    #Show executed SQL queries in console
+    show-sql: false
+
+    #Hibernate configuration
+    hibernate:
+      #Schema handling strategy
+      ddl-auto: none
+
+
+      #Pretty print the logged SQL queries
+      format-sql: false
+    generate-ddl: false
+
+
+  datasource:
+    #DB connectivity details
+    url: "jdbc:mysql://localhost:3306/test?useSSL=true"
+    username: jdbcdb
+    password: root
+    initialization-mode: always
+
+
+
+
